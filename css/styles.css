@@ -14,6 +14,7 @@ body {
   --footer-nav-color: rgba(255, 255, 255, 0.6);
   --accent-color: #000000;
   --hero-bacground-color: #2f303a;
+  --header-border_bottom-color: #ececec;
 }
 
 .list {
@@ -73,10 +74,6 @@ section {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.header {
-  /* background: tomato; */
 }
 
 .logo,
@@ -146,9 +143,9 @@ section {
   color: var(--text-nav-link-hover-color);
 }
 
-/* .header {
-  margin-bottom: 200px;
-} */
+.header {
+  border-bottom: 1px solid var(--header-border_bottom-color);
+}
 
 /* Головний герой */
 
@@ -313,13 +310,16 @@ section {
 /* Portfolio */
 /* Filters */
 
-/* .portf-list {
-} */
+.portf-list {
+  text-align: center;
+  margin-bottom: 34px;
+}
 
 /* .filters-item {
 } */
 
 .filters-btn {
+  display: inline-block;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -329,6 +329,7 @@ section {
   cursor: pointer;
   color: var(text-nav-link-color);
   background-color: var(--team-background-color);
+  border-radius: 4px;
 }
 
 .filters-btn:hover,
@@ -337,8 +338,9 @@ section {
   background-color: var(--text-nav-link-hover-color);
 }
 
-/* .img-link
-{} */
+.filters-img {
+  margin-bottom: 20px;
+}
 
 .img-title {
   font-weight: 700;
@@ -346,6 +348,7 @@ section {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-nav-link-color);
+  margin-bottom: 4px;
 }
 
 .img-text {
