@@ -18,11 +18,15 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 p,
@@ -41,6 +45,10 @@ ol {
   padding-left: 0;
 }
 
+section {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -52,11 +60,6 @@ ol {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.header {
-  padding-right: 24;
-  padding-bottom: 25;
 }
 
 .visually-hidden {
@@ -72,6 +75,10 @@ ol {
   margin: -1px;
 }
 
+.header {
+  /* background: tomato; */
+}
+
 .logo,
 .accent {
   text-decoration: none;
@@ -79,6 +86,7 @@ ol {
 
 /* Site Nav */
 .logo {
+  display: inline-block;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -89,6 +97,7 @@ ol {
 }
 
 .accent {
+  display: inline-block;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -98,7 +107,13 @@ ol {
   color: var(--accent-color);
 }
 
+.site-nav {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .nav-link {
+  display: block;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -117,6 +132,7 @@ ol {
 }
 
 .auth-link {
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -130,13 +146,21 @@ ol {
   color: var(--text-nav-link-hover-color);
 }
 
+/* .header {
+  margin-bottom: 200px;
+} */
+
 /* Головний герой */
 
 .hero {
+  text-align: center;
   background: var(--hero-bacground-color);
 }
 
 .hero-title {
+  max-width: 696px;
+  margin: 0 auto 30px auto;
+  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -147,18 +171,18 @@ ol {
 }
 
 .hero-btn {
+  display: inline-block;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--hero-title-color);
   background-color: var(--text-nav-link-hover-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -167,8 +191,6 @@ ol {
 }
 
 /* Можливості студії */
-.studio-capabilities {
-}
 
 .studio-title {
   font-weight: 700;
@@ -196,7 +218,7 @@ ol {
 }
 
 /* Команда */
-.team {
+.section .team {
   background: var(--team-background-color);
 }
 
@@ -273,9 +295,6 @@ ol {
 
 /* Portfolio */
 /* Filters */
-
-/* .portf {
-} */
 
 /* .portf-list {
 } */
