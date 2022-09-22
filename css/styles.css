@@ -102,15 +102,13 @@ section {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-
-.site-nav {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .nav-link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -124,8 +122,26 @@ section {
   color: var(--text-nav-link-hover-color);
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link.current {
   color: var(--text-nav-link-hover-color);
+}
+
+/* .auth-nav */
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
 }
 
 .auth-link {
