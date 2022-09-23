@@ -170,12 +170,14 @@ section {
 /* Головний герой */
 
 .hero {
+  margin: 0 auto;
+  max-width: 1600px;
   text-align: center;
   background: var(--hero-bacground-color);
 }
 
 .hero-title {
-  max-width: 696px;
+  max-wid th: 696px;
   margin: 0 auto 30px auto;
   padding-top: 200px;
   font-weight: 900;
@@ -234,10 +236,8 @@ section {
 }
 
 /* Приклади робіт */
-/* .section-work {
-  padding-top: 0px;
-  padding-bottom: 94px;
-} */
+
+
 
 .work-examp-title {
   font-weight: 700;
@@ -310,6 +310,8 @@ section {
 
 /* footer */
 .footer {
+  margin: 0 auto;
+  max-width: 1600px;
   background: var(--hero-bacground-color);
 }
 
