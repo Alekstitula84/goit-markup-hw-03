@@ -367,15 +367,14 @@ section {
 }
 
 /* Portfolio */
-/* Filters */
 
-.portf-list {
-  text-align: center;
-  margin-bottom: 34px;
+.filters-container {
+  margin-bottom: 50px;
 }
 
-/* .filters-item {
-} */
+.filters-section{
+  padding-bottom: 0px;
+}
 
 .filters-btn {
   display: inline-block;
@@ -389,13 +388,28 @@ section {
   color: var(text-nav-link-color);
   background-color: var(--team-background-color);
   border-radius: 4px;
-}
+  padding: 6px 22px;
+  border: transparent;
+  }
 
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--hero-title-color);
   background-color: var(--text-nav-link-hover-color);
 }
+
+
+
+.filters-list {
+  display: flex;
+    gap: 8px;
+    justify-content: center;
+  
+}
+
+
+
+
 
 .filters-img {
   margin-bottom: 20px;
