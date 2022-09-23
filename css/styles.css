@@ -54,7 +54,7 @@ section {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin: 0 auto;
 }
 
@@ -411,9 +411,15 @@ section {
 .img-list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+  /* width: calc((100%-60px)/3); */
+  
 }
 
-
+.filters-img{
+  margin-bottom: 20px;
+}
 
 .img-title {
   font-weight: 700;
@@ -422,6 +428,7 @@ section {
   letter-spacing: 0.06em;
   color: var(--text-nav-link-color);
   margin-bottom: 4px;
+  max-width: 322px;
 }
 
 .img-text {
@@ -430,4 +437,5 @@ section {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--auth-link-color);
+  max-width: 322px;
 }
