@@ -46,9 +46,9 @@ ol {
   padding-left: 0;
 }
 
-section {
+/* .section {
   display: block;
-}
+} */
 
 .container {
   width: 1200px;
@@ -413,29 +413,36 @@ section {
   flex-wrap: wrap;
   row-gap: 30px;
   column-gap: 30px;
-  /* width: calc((100%-60px)/3); */
   
 }
 
 .filters-img{
+  display: block;
   margin-bottom: 20px;
 }
 
 .img-title {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-nav-link-color);
   margin-bottom: 4px;
-  max-width: 322px;
+    max-width: 322px;
 }
 
 .img-text {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--auth-link-color);
   max-width: 322px;
+  margin-bottom: 20px;
+}
+
+.img-link {
+  width: calc((100%-60px)/3);
 }
