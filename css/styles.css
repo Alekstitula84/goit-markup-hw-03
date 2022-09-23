@@ -372,9 +372,7 @@ section {
   margin-bottom: 50px;
 }
 
-.filters-section{
-  padding-bottom: 0px;
-}
+
 
 .filters-btn {
   display: inline-block;
@@ -407,13 +405,15 @@ section {
   
 }
 
+/* image list content */
 
 
-
-
-.filters-img {
-  margin-bottom: 20px;
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+
 
 .img-title {
   font-weight: 700;
