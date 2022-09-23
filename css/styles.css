@@ -82,6 +82,11 @@ section {
 }
 
 /* Site Nav */
+
+.header-container {
+  display: flex;
+}
+
 .logo {
   display: inline-block;
   font-family: "Raleway";
@@ -127,9 +132,6 @@ section {
   align-items: center;
   gap: 50px;
 }
-/* .site-nav .item + .item {
-  margin-left: 50px;
-} */
 
 .site-nav .link.current {
   color: var(--text-nav-link-hover-color);
@@ -139,6 +141,7 @@ section {
 
 .auth-nav {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .auth-nav .item + .item {
@@ -216,6 +219,11 @@ section {
   margin-bottom: 10px;
 }
 
+.studio-list {
+  display: flex;
+  gap: 30px;
+}
+
 .studio-text {
   max-width: 270px;
   font-weight: 400;
@@ -226,10 +234,10 @@ section {
 }
 
 /* Приклади робіт */
-.section-work {
+/* .section-work {
   padding-top: 0px;
   padding-bottom: 94px;
-}
+} */
 
 .work-examp-title {
   font-weight: 700;
@@ -240,9 +248,22 @@ section {
   margin-bottom: 50px;
 }
 
+.work-examp-list {
+  display: flex;
+  gap: 30px;
+}
+
+.work-examp-item {
+  width: calc((100% - 60px) / 3);
+}
+
 /* Команда */
 .section .team {
   background: var(--team-background-color);
+}
+
+.team-container {
+  display: flex;
 }
 
 .team-main-title {
@@ -256,6 +277,7 @@ section {
 
 .team-item {
   background-color: var(--hero-title-color);
+  width: calc((100% - 90px) / 4);
 }
 
 .img-foto {
@@ -269,6 +291,11 @@ section {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .team-pos {
@@ -286,7 +313,14 @@ section {
   background: var(--hero-bacground-color);
 }
 
+.footer-logo {
+  padding-top: 60px;
+  padding-right: auto;
+  margin-bottom: 20px;
+}
+
 .accent-footer {
+  display: inline-block;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -296,7 +330,13 @@ section {
   color: var(--hero-title-color);
 }
 
+.footer-data {
+  display: inline-block;
+  margin: 0px auto 60px;
+}
+
 .footer-adres {
+  display: inline-block;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
