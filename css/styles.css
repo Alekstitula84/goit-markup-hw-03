@@ -15,6 +15,7 @@ body {
   --accent-color: #000000;
   --hero-bacground-color: #2f303a;
   --header-border_bottom-color: #ececec;
+  --portfolio-border-color: #eeeeee;
 }
 
 .list {
@@ -45,10 +46,6 @@ ol {
   margin: 0;
   padding-left: 0;
 }
-
-/* .section {
-  display: block;
-} */
 
 .container {
   width: 1200px;
@@ -85,6 +82,7 @@ ol {
 
 .header-container {
   display: flex;
+  border-bottom: 1px solid var(--header-border_bottom-color);
 }
 
 .logo {
@@ -162,10 +160,6 @@ ol {
 .auth-link:focus {
   color: var(--text-nav-link-hover-color);
 }
-
-/* .header {
-  border-bottom: 1px solid var(--header-border_bottom-color);
-} */
 
 /* Головний герой */
 
@@ -419,6 +413,9 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-nav-link-color);
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 4px;
   max-width: 322px;
 }
@@ -431,9 +428,12 @@ ol {
   letter-spacing: 0.03em;
   color: var(--auth-link-color);
   max-width: 322px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 20px;
 }
 
 .img-item {
+  border-bottom: 1px solid var(--portfolio-border-color);
   flex-basis: calc(100 / 3-60px);
 }
