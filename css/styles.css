@@ -434,6 +434,6 @@ ol {
   margin-bottom: 20px;
 }
 
-.img-link {
-  width: calc((100%-60px) / 3);
+.img-item {
+  flex-basis: calc(100 / 3-60px);
 }
