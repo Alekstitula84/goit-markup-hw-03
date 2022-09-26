@@ -324,7 +324,16 @@ ol {
 }
 
 .footer-logo {
-  display: block;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--text-nav-link-hover-color);
+
   margin-bottom: 20px;
 }
 
@@ -339,10 +348,6 @@ ol {
   color: var(--hero-title-color);
 }
 
-.footer-data {
-  display: inline-block;
-}
-
 .footer-adres {
   display: inline-block;
   font-weight: 400;
@@ -351,6 +356,7 @@ ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
+  margin-bottom: 9px;
 }
 
 .footer-adres:hover,
@@ -359,12 +365,14 @@ ol {
 }
 
 .footer-nav {
+  display: inline-block;
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-nav-color);
+  margin-bottom: 9px;
 }
 
 .footer-nav:hover,
@@ -373,10 +381,6 @@ ol {
 }
 
 /* Portfolio */
-
-.filters-container {
-  margin-bottom: 50px;
-}
 
 .filters-btn {
   display: inline-block;
@@ -404,6 +408,7 @@ ol {
   display: flex;
   gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* image list content */
@@ -417,7 +422,12 @@ ol {
 
 .filters-img {
   display: block;
-  margin-bottom: 20px;
+}
+
+.image-wrap {
+  padding: 20px 24px;
+  border: 1px solid var(--portfolio-border-color);
+  border-top: none;
 }
 
 .img-title {
@@ -427,11 +437,8 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-nav-link-color);
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  /* max-width: 322px; */
   margin-bottom: 4px;
-  max-width: 322px;
 }
 
 .img-text {
@@ -441,13 +448,9 @@ ol {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--auth-link-color);
-  max-width: 322px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 20px;
+  /* max-width: 322px; */
 }
 
 .img-item {
-  border-bottom: 1px solid var(--portfolio-border-color);
-  flex-basis: calc(100 / 3-60px);
+  flex-basis: calc(100% / 3 -60px);
 }
