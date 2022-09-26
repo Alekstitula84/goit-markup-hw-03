@@ -448,7 +448,6 @@ ol {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--auth-link-color);
-  /* max-width: 322px; */
 }
 
 .img-item {
