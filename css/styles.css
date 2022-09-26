@@ -79,10 +79,12 @@ ol {
 }
 
 /* Site Nav */
+.header {
+  border-bottom: 1px solid var(--header-border_bottom-color);
+}
 
 .header-container {
   display: flex;
-  border-bottom: 1px solid var(--header-border_bottom-color);
 }
 
 .logo {
@@ -94,6 +96,8 @@ ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-nav-link-hover-color);
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 
 .accent {
@@ -106,6 +110,8 @@ ol {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 
 .nav-link {
@@ -154,6 +160,8 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--auth-link-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-link:hover,
@@ -167,13 +175,12 @@ ol {
   margin: 0 auto;
   max-width: 1600px;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background: var(--hero-bacground-color);
 }
 
 .hero-title {
-  max-width: 696px;
-  margin: 0 auto 30px auto;
-  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -181,10 +188,12 @@ ol {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-title-color);
+  max-width: 696px;
+  margin: 0 auto 30px auto;
 }
 
 .hero-btn {
-  display: inline-block;
+  display: block;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -196,7 +205,9 @@ ol {
   background-color: var(--text-nav-link-hover-color);
   cursor: pointer;
   border-radius: 4px;
-  margin-bottom: 200px;
+  border: none;
+  padding: 10px 32px;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -231,6 +242,11 @@ ol {
 
 /* Приклади робіт */
 
+.work-examp {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 .work-examp-title {
   font-weight: 700;
   font-size: 36px;
@@ -250,7 +266,7 @@ ol {
 }
 
 /* Команда */
-.section .team {
+.team {
   background: var(--team-background-color);
 }
 
@@ -302,14 +318,13 @@ ol {
 
 /* footer */
 .footer {
-  margin: 0 auto;
-  max-width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--hero-bacground-color);
 }
 
 .footer-logo {
-  padding-top: 60px;
-  padding-right: auto;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -326,7 +341,6 @@ ol {
 
 .footer-data {
   display: inline-block;
-  margin: 0px auto 60px;
 }
 
 .footer-adres {
@@ -430,7 +444,7 @@ ol {
   max-width: 322px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .img-item {
